@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E08428122410B1700D10579 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E08428022410B1700D10579 /* AppDelegate.m */; };
+		4E08428422410B1700D10579 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E08428322410B1700D10579 /* ViewController.m */; };
+		4E08428722410B1700D10579 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E08428522410B1700D10579 /* Main.storyboard */; };
+		4E08428922410B1900D10579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E08428822410B1900D10579 /* Assets.xcassets */; };
+		4E08428C22410B1900D10579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E08428A22410B1900D10579 /* LaunchScreen.storyboard */; };
+		4E08428F22410B1900D10579 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E08428E22410B1900D10579 /* main.m */; };
+		4E08429922410B1900D10579 /* TouchTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E08429822410B1900D10579 /* TouchTrackerTests.m */; };
+		4E0842A422410B1900D10579 /* TouchTrackerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0842A322410B1900D10579 /* TouchTrackerUITests.m */; };
+		4E0842B322410FE900D10579 /* BNLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0842B222410FE900D10579 /* BNLine.m */; };
+		4E0842B62241105800D10579 /* BNRDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0842B52241105800D10579 /* BNRDrawView.m */; };
+		4E0842BA224110AF00D10579 /* BNRDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0842B8224110AF00D10579 /* BNRDrawViewController.m */; };
+		4E0842BB224110AF00D10579 /* BNRDrawViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E0842B9224110AF00D10579 /* BNRDrawViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E08429522410B1900D10579 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E08427422410B1700D10579 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E08427B22410B1700D10579;
+			remoteInfo = TouchTracker;
+		};
+		4E0842A022410B1900D10579 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E08427422410B1700D10579 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E08427B22410B1700D10579;
+			remoteInfo = TouchTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E08427C22410B1700D10579 /* TouchTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E08427F22410B1700D10579 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4E08428022410B1700D10579 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4E08428222410B1700D10579 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4E08428322410B1700D10579 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4E08428622410B1700D10579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E08428822410B1900D10579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E08428B22410B1900D10579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E08428D22410B1900D10579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E08428E22410B1900D10579 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4E08429422410B1900D10579 /* TouchTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E08429822410B1900D10579 /* TouchTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchTrackerTests.m; sourceTree = "<group>"; };
+		4E08429A22410B1900D10579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E08429F22410B1900D10579 /* TouchTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0842A322410B1900D10579 /* TouchTrackerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchTrackerUITests.m; sourceTree = "<group>"; };
+		4E0842A522410B1900D10579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E0842B122410FE900D10579 /* BNLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNLine.h; sourceTree = "<group>"; };
+		4E0842B222410FE900D10579 /* BNLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNLine.m; sourceTree = "<group>"; };
+		4E0842B42241105800D10579 /* BNRDrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRDrawView.h; sourceTree = "<group>"; };
+		4E0842B52241105800D10579 /* BNRDrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRDrawView.m; sourceTree = "<group>"; };
+		4E0842B7224110AF00D10579 /* BNRDrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRDrawViewController.h; sourceTree = "<group>"; };
+		4E0842B8224110AF00D10579 /* BNRDrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRDrawViewController.m; sourceTree = "<group>"; };
+		4E0842B9224110AF00D10579 /* BNRDrawViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BNRDrawViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E08427922410B1700D10579 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E08429122410B1900D10579 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E08429C22410B1900D10579 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E08427322410B1700D10579 = {
+			isa = PBXGroup;
+			children = (
+				4E08427E22410B1700D10579 /* TouchTracker */,
+				4E08429722410B1900D10579 /* TouchTrackerTests */,
+				4E0842A222410B1900D10579 /* TouchTrackerUITests */,
+				4E08427D22410B1700D10579 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E08427D22410B1700D10579 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E08427C22410B1700D10579 /* TouchTracker.app */,
+				4E08429422410B1900D10579 /* TouchTrackerTests.xctest */,
+				4E08429F22410B1900D10579 /* TouchTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E08427E22410B1700D10579 /* TouchTracker */ = {
+			isa = PBXGroup;
+			children = (
+				4E08427F22410B1700D10579 /* AppDelegate.h */,
+				4E08428022410B1700D10579 /* AppDelegate.m */,
+				4E08428222410B1700D10579 /* ViewController.h */,
+				4E08428322410B1700D10579 /* ViewController.m */,
+				4E08428522410B1700D10579 /* Main.storyboard */,
+				4E08428822410B1900D10579 /* Assets.xcassets */,
+				4E08428A22410B1900D10579 /* LaunchScreen.storyboard */,
+				4E08428D22410B1900D10579 /* Info.plist */,
+				4E08428E22410B1900D10579 /* main.m */,
+				4E0842B122410FE900D10579 /* BNLine.h */,
+				4E0842B42241105800D10579 /* BNRDrawView.h */,
+				4E0842B52241105800D10579 /* BNRDrawView.m */,
+				4E0842B222410FE900D10579 /* BNLine.m */,
+				4E0842B7224110AF00D10579 /* BNRDrawViewController.h */,
+				4E0842B8224110AF00D10579 /* BNRDrawViewController.m */,
+				4E0842B9224110AF00D10579 /* BNRDrawViewController.xib */,
+			);
+			path = TouchTracker;
+			sourceTree = "<group>";
+		};
+		4E08429722410B1900D10579 /* TouchTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E08429822410B1900D10579 /* TouchTrackerTests.m */,
+				4E08429A22410B1900D10579 /* Info.plist */,
+			);
+			path = TouchTrackerTests;
+			sourceTree = "<group>";
+		};
+		4E0842A222410B1900D10579 /* TouchTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4E0842A322410B1900D10579 /* TouchTrackerUITests.m */,
+				4E0842A522410B1900D10579 /* Info.plist */,
+			);
+			path = TouchTrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E08427B22410B1700D10579 /* TouchTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E0842A822410B1900D10579 /* Build configuration list for PBXNativeTarget "TouchTracker" */;
+			buildPhases = (
+				4E08427822410B1700D10579 /* Sources */,
+				4E08427922410B1700D10579 /* Frameworks */,
+				4E08427A22410B1700D10579 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchTracker;
+			productName = TouchTracker;
+			productReference = 4E08427C22410B1700D10579 /* TouchTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E08429322410B1900D10579 /* TouchTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E0842AB22410B1900D10579 /* Build configuration list for PBXNativeTarget "TouchTrackerTests" */;
+			buildPhases = (
+				4E08429022410B1900D10579 /* Sources */,
+				4E08429122410B1900D10579 /* Frameworks */,
+				4E08429222410B1900D10579 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E08429622410B1900D10579 /* PBXTargetDependency */,
+			);
+			name = TouchTrackerTests;
+			productName = TouchTrackerTests;
+			productReference = 4E08429422410B1900D10579 /* TouchTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4E08429E22410B1900D10579 /* TouchTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E0842AE22410B1900D10579 /* Build configuration list for PBXNativeTarget "TouchTrackerUITests" */;
+			buildPhases = (
+				4E08429B22410B1900D10579 /* Sources */,
+				4E08429C22410B1900D10579 /* Frameworks */,
+				4E08429D22410B1900D10579 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E0842A122410B1900D10579 /* PBXTargetDependency */,
+			);
+			name = TouchTrackerUITests;
+			productName = TouchTrackerUITests;
+			productReference = 4E08429F22410B1900D10579 /* TouchTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E08427422410B1700D10579 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Tawhid Joarder";
+				TargetAttributes = {
+					4E08427B22410B1700D10579 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					4E08429322410B1900D10579 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4E08427B22410B1700D10579;
+					};
+					4E08429E22410B1900D10579 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4E08427B22410B1700D10579;
+					};
+				};
+			};
+			buildConfigurationList = 4E08427722410B1700D10579 /* Build configuration list for PBXProject "TouchTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E08427322410B1700D10579;
+			productRefGroup = 4E08427D22410B1700D10579 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E08427B22410B1700D10579 /* TouchTracker */,
+				4E08429322410B1900D10579 /* TouchTrackerTests */,
+				4E08429E22410B1900D10579 /* TouchTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E08427A22410B1700D10579 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E08428C22410B1900D10579 /* LaunchScreen.storyboard in Resources */,
+				4E0842BB224110AF00D10579 /* BNRDrawViewController.xib in Resources */,
+				4E08428922410B1900D10579 /* Assets.xcassets in Resources */,
+				4E08428722410B1700D10579 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E08429222410B1900D10579 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E08429D22410B1900D10579 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E08427822410B1700D10579 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0842B62241105800D10579 /* BNRDrawView.m in Sources */,
+				4E0842BA224110AF00D10579 /* BNRDrawViewController.m in Sources */,
+				4E08428422410B1700D10579 /* ViewController.m in Sources */,
+				4E08428F22410B1900D10579 /* main.m in Sources */,
+				4E08428122410B1700D10579 /* AppDelegate.m in Sources */,
+				4E0842B322410FE900D10579 /* BNLine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E08429022410B1900D10579 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E08429922410B1900D10579 /* TouchTrackerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E08429B22410B1900D10579 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E0842A422410B1900D10579 /* TouchTrackerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E08429622410B1900D10579 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E08427B22410B1700D10579 /* TouchTracker */;
+			targetProxy = 4E08429522410B1900D10579 /* PBXContainerItemProxy */;
+		};
+		4E0842A122410B1900D10579 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E08427B22410B1700D10579 /* TouchTracker */;
+			targetProxy = 4E0842A022410B1900D10579 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E08428522410B1700D10579 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E08428622410B1700D10579 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4E08428A22410B1900D10579 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E08428B22410B1900D10579 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E0842A622410B1900D10579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4E0842A722410B1900D10579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E0842A922410B1900D10579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QA5HCG2XW6;
+				INFOPLIST_FILE = TouchTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.debotosh.TouchTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E0842AA22410B1900D10579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QA5HCG2XW6;
+				INFOPLIST_FILE = TouchTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.debotosh.TouchTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4E0842AC22410B1900D10579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QA5HCG2XW6;
+				INFOPLIST_FILE = TouchTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.debotosh.TouchTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchTracker.app/TouchTracker";
+			};
+			name = Debug;
+		};
+		4E0842AD22410B1900D10579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QA5HCG2XW6;
+				INFOPLIST_FILE = TouchTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.debotosh.TouchTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchTracker.app/TouchTracker";
+			};
+			name = Release;
+		};
+		4E0842AF22410B1900D10579 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QA5HCG2XW6;
+				INFOPLIST_FILE = TouchTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.debotosh.TouchTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TouchTracker;
+			};
+			name = Debug;
+		};
+		4E0842B022410B1900D10579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QA5HCG2XW6;
+				INFOPLIST_FILE = TouchTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.debotosh.TouchTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TouchTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E08427722410B1700D10579 /* Build configuration list for PBXProject "TouchTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E0842A622410B1900D10579 /* Debug */,
+				4E0842A722410B1900D10579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E0842A822410B1900D10579 /* Build configuration list for PBXNativeTarget "TouchTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E0842A922410B1900D10579 /* Debug */,
+				4E0842AA22410B1900D10579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E0842AB22410B1900D10579 /* Build configuration list for PBXNativeTarget "TouchTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E0842AC22410B1900D10579 /* Debug */,
+				4E0842AD22410B1900D10579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E0842AE22410B1900D10579 /* Build configuration list for PBXNativeTarget "TouchTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E0842AF22410B1900D10579 /* Debug */,
+				4E0842B022410B1900D10579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E08427422410B1700D10579 /* Project object */;
+}
